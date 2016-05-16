@@ -1,0 +1,16 @@
+{
+  "identifier": "burstly",
+  "prefab": "burstlaser",
+  "size":"1x1",
+  "title": "Burst Laser Mark I",
+  "desc": "Also known as 'Burstly'",
+  "system": 80,
+  "armour": 300,
+  "energy":100,
+  
+  "abilities": [
+    {"type": "Laser", "details":
+    "{\"minDamage\":20,\"maxDamage\":30,\"targets\":3,
+     \"shotsPerTarget\":5, \"delayBetweenShots\":10, \"projectileSpeed\":200}"}
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "identifier": "largeshield1",
+  "prefab": "largeshield",
+  "size":"2x2",
+  "title": "Large Shield Mark I",
+  "system": 150,
+  "armour": 500,
+  "energy":300,
+  
+  "abilities": [
+    {"type": "Shield", "details":
+    "{\"gain\":250, \"max\":1000, \"range\":100}"}
+  ]
+}

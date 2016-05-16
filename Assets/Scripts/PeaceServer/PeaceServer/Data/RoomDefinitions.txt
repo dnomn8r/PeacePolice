@@ -1,0 +1,12 @@
+[  
+  	{"name": "1x1", "size": "1x1"},
+  	{"name": "2x1_4door", "size": "2x1"},
+  	{"name": "2x1_5door", "size": "2x1"},
+  	{"name": "2x1_6door", "size": "2x1"},
+  	{"name": "2x2_4door", "size": "2x2"},
+  	{"name": "2x2_5door", "size": "2x2"},
+  	{"name": "2x2_6door_adjacent", "size": "2x2"},
+  	{"name": "2x2_6door_opposite", "size": "2x2"},   
+  	{"name": "2x2_7door", "size": "2x2"},
+  	{"name": "2x2_8door", "size": "2x2"}
+]

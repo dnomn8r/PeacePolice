@@ -1,0 +1,17 @@
+{
+	"identifier": "beam1",
+	"prefab": "beam1",
+	"size": "1x1",
+	"title": "Beam Mark I",
+	"desc": "Beam Laser",
+	"system": 35,
+	"armour": 60,
+	"energy": 40,
+
+	"abilities": [{
+			"type": "Beam",
+			"details": "{\"minDamage\":50,\"maxDamage\":50,\"chargeTime\":50, \"targets\":1}"
+		}
+
+	]
+}

@@ -1,0 +1,13 @@
+{
+  "identifier": "bridge",
+  "prefab": "basicbridge",
+  "size":"1x1",
+  "title": "Basic Bridge",
+  "system": 1000,
+  "armour": 1000,
+  
+   "abilities": [
+    {"type": "Bridge", "details":""}
+    
+  ]
+}

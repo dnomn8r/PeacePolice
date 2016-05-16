@@ -1,0 +1,16 @@
+{
+  "identifier": "engine1",
+  "prefab": "basicengine",
+  "size":"1x1",
+  "title": "Engine Mark I",
+  "desc": "Wussy Engine.",
+  "system": 40,
+  "armour": 150,
+  "energy":75,
+  
+  "restrictions":["AFT"],
+  
+  "abilities": [
+    {"type": "Engine", "details":"{\"thrust\":50}"}
+  ]
+}

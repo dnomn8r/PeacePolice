@@ -1,0 +1,15 @@
+{
+  "identifier": "sanka2",
+  "prefab": "laser2",
+  "size":"1x1",
+  "title": "Laser Mark II",
+  "desc": "Not so Wussy Laser",
+  "system": 50,
+  "armour": 200,
+  "energy":250,
+  
+  "abilities": [
+    {"type": "Laser", "controller":"LaserController", "details":
+    "{\"minDamage\":40,\"maxDamage\":60, \"shotsPerTarget\":1, \"delayBetweenShots\":10, \"projectileSpeed\":150}"}
+  ]
+}

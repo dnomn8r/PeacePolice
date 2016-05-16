@@ -1,0 +1,17 @@
+{
+	"identifier": "heal1",
+	"prefab": "heal1",
+	"size": "1x1",
+	"title": "Heal Mark I",
+	"desc": "Heals a component\'s armor",
+	"system": 350,
+	"armour": 200,
+	"energy": 40,
+
+	"abilities": [{
+			"type": "Heal",
+			"details": "{\"heal\":50,\"healTime\":25,\"targets\":1}"
+		}
+
+	]
+}

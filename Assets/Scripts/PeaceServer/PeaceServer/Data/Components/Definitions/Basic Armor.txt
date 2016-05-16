@@ -1,0 +1,14 @@
+{
+  "identifier": "armour1",
+  "prefab": "armour",
+  "size":"1x1",
+  "title": "Basic Armour",
+  "desc": "Wussy armour.",
+  "system": 0,
+  "armour": 3000,
+  
+  "abilities": [
+    {"type": "Armour", "details":
+    "{\"armourBonus\":200}"}
+  ]
+}

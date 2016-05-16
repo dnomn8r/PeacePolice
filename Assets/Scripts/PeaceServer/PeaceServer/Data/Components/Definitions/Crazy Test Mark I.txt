@@ -1,0 +1,22 @@
+{
+  "identifier": "crazy",
+  "prefab": "crazy",
+  "size":"1x1",
+  "title": "Crazy Mark I",
+  "system": 250,
+  "armour": 400,
+  "energy":250,
+  
+  "abilities": [
+    {
+    "type": "Laser", 
+    "details": "{\"minDamage\":10,\"maxDamage\":25,\"targets\":2,\"shotsPerTarget\":1, \"delayBetweenShots\":10, \"projectileSpeed\":200}"
+    },
+    
+    {
+    "type": "Heal", 
+    "details": "{\"heal\":30,\"healTime\":10,\"targets\":2}"
+    }
+
+    ]
+}

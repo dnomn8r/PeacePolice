@@ -1,0 +1,14 @@
+{
+  "identifier": "enhancer1",
+  "prefab": "enhancer1",
+  "size":"2x1",
+  "title": "Weapon Enhancer Mark I",
+  "system": 800,
+  "armour": 200,
+  "energy":75,
+  
+  "abilities": [
+    {"type": "LaserEnhancer", "details":
+    "{\"bonusPercent\":100}"}
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "identifier": "randomsanka",
+  "prefab": "laser1",
+  "size":"1x1",
+  "title": "Random Laser Mark I",
+  "desc": "Wussy Random Laser",
+  "system": 150,
+  "armour": 300,
+  "energy":100,
+  
+  "abilities":
+  [
+    {
+    "type": "RandomizedProjectile", 
+    "details": 
+    "{\"minDamage\":25,\"maxDamage\":60, \"shots\":15, \"delayBetweenShots\":5, \"projectileSpeed\":400}"
+    }
+  ]
+}

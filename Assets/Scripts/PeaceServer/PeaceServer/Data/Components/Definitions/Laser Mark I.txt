@@ -1,0 +1,17 @@
+{
+  "identifier": "sanka",
+  "prefab": "laser1",
+  "size":"1x1",
+  "title": "Laser Mark I",
+  "desc": "Wussy Laser",
+  "system": 100,
+  "armour": 250,
+  "energy":75,
+  
+  "abilities":
+  [
+    {"type": "Laser",
+    "details":
+    "{\"minDamage\":20,\"maxDamage\":50,\"targets\":1,\"shotsPerTarget\":3, \"delayBetweenShots\":10, \"projectileSpeed\":400}"}  
+  ]
+}
