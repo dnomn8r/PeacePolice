@@ -1,0 +1,78 @@
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2008
+
+Project("{D811FF54-DA8D-7A2D-8EF6-2759EEAEEF25}") = "Peace1.0", "Assembly-CSharp-vs.csproj", "{3A8F82E2-44CC-E826-091B-847E75D28015}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{3A8F82E2-44CC-E826-091B-847E75D28015}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3A8F82E2-44CC-E826-091B-847E75D28015}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3A8F82E2-44CC-E826-091B-847E75D28015}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3A8F82E2-44CC-E826-091B-847E75D28015}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+														GlobalSection(MonoDevelopProperties) = preSolution
+		Policies = $0
+		$0.TextStylePolicy = $1
+		$1.FileWidth = 120
+		$1.TabsToSpaces = False
+		$1.EolMarker = Unix
+		$1.inheritsSet = VisualStudio
+		$1.inheritsScope = text/plain
+		$1.scope = text/x-csharp
+		$0.CSharpFormattingPolicy = $2
+		$2.IndentSwitchBody = True
+		$2.IndentBreakStatements = False
+		$2.NamespaceBraceStyle = EndOfLineWithoutSpace
+		$2.ClassBraceStyle = EndOfLineWithoutSpace
+		$2.InterfaceBraceStyle = EndOfLineWithoutSpace
+		$2.StructBraceStyle = EndOfLineWithoutSpace
+		$2.EnumBraceStyle = EndOfLineWithoutSpace
+		$2.MethodBraceStyle = EndOfLineWithoutSpace
+		$2.AnonymousMethodBraceStyle = EndOfLineWithoutSpace
+		$2.ConstructorBraceStyle = EndOfLineWithoutSpace
+		$2.DestructorBraceStyle = EndOfLineWithoutSpace
+		$2.PropertyBraceStyle = EndOfLineWithoutSpace
+		$2.PropertyGetBraceStyle = EndOfLineWithoutSpace
+		$2.PropertySetBraceStyle = EndOfLineWithoutSpace
+		$2.EventBraceStyle = EndOfLineWithoutSpace
+		$2.EventAddBraceStyle = EndOfLineWithoutSpace
+		$2.EventRemoveBraceStyle = EndOfLineWithoutSpace
+		$2.StatementBraceStyle = EndOfLineWithoutSpace
+		$2.ElseNewLinePlacement = DoNotCare
+		$2.EmbeddedStatementPlacement = DoNotCare
+		$2.BeforeMethodDeclarationParentheses = False
+		$2.BeforeMethodCallParentheses = False
+		$2.BeforeConstructorDeclarationParentheses = False
+		$2.NewLineBeforeConstructorInitializerColon = SameLine
+		$2.BeforeIndexerDeclarationBracket = False
+		$2.BeforeDelegateDeclarationParentheses = False
+		$2.NewParentheses = False
+		$2.IfParentheses = False
+		$2.WhileParentheses = False
+		$2.ForParentheses = False
+		$2.ForeachParentheses = False
+		$2.CatchParentheses = False
+		$2.SwitchParentheses = False
+		$2.LockParentheses = False
+		$2.UsingParentheses = False
+		$2.SpacesBeforeBrackets = False
+		$2.inheritsSet = Mono
+		$2.inheritsScope = text/x-csharp
+		$2.scope = text/x-csharp
+		$0.TextStylePolicy = $3
+		$3.FileWidth = 120
+		$3.TabsToSpaces = False
+		$3.EolMarker = Unix
+		$3.inheritsSet = VisualStudio
+		$3.inheritsScope = text/plain
+		$3.scope = text/plain
+	EndGlobalSection
+
+EndGlobal

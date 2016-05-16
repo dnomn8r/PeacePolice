@@ -1,0 +1,349 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+	<Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+	<Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+	<ProductVersion>10.0.20506</ProductVersion>
+	<SchemaVersion>2.0</SchemaVersion>
+	<ProjectGuid>{613FE621-49EF-B406-F836-A2D6E6720BF3}</ProjectGuid>
+	<OutputType>Library</OutputType>
+	<AppDesignerFolder>Properties</AppDesignerFolder>
+	<RootNamespace></RootNamespace>
+	<AssemblyName>Assembly-CSharp-firstpass</AssemblyName>
+	<TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+	<FileAlignment>512</FileAlignment>
+	<BaseDirectory>Assets</BaseDirectory>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+	<DebugSymbols>true</DebugSymbols>
+	<DebugType>full</DebugType>
+	<Optimize>false</Optimize>
+	<OutputPath>Temp\bin\Debug\</OutputPath>
+	<DefineConstants>DEBUG;TRACE;UNITY_5_0_0;UNITY_5_0;UNITY_5;ENABLE_LICENSE_RENAME;ENABLE_NEW_BUGREPORTER;ENABLE_2D_PHYSICS;ENABLE_4_6_FEATURES;ENABLE_AUDIO;ENABLE_CACHING;ENABLE_CLOTH;ENABLE_DUCK_TYPING;ENABLE_FRAME_DEBUGGER;ENABLE_GENERICS;ENABLE_HOME_SCREEN;ENABLE_IMAGEEFFECTS;ENABLE_LIGHT_PROBES_LEGACY;ENABLE_MICROPHONE;ENABLE_MULTIPLE_DISPLAYS;ENABLE_NEW_HIERARCHY;ENABLE_PHYSICS;ENABLE_PHYSICS_PHYSX3;ENABLE_PLUGIN_INSPECTOR;ENABLE_SHADOWS;ENABLE_SINGLE_INSTANCE_BUILD_SETTING;ENABLE_SPRITES;ENABLE_TERRAIN;ENABLE_UNITYEVENTS;ENABLE_WEBCAM;ENABLE_WWW;ENABLE_AUDIOMIXER_SUSPEND;ENABLE_NONPRO;INCLUDE_DYNAMIC_GI;INCLUDE_GI;INCLUDE_IL2CPP;PLATFORM_SUPPORTS_MONO;RENDER_SOFTWARE_CURSOR;UNITY_STANDALONE_OSX;UNITY_STANDALONE;ENABLE_SUBSTANCE;ENABLE_GAMECENTER;ENABLE_TEXTUREID_MAP;ENABLE_RUNTIME_GI;ENABLE_MOVIES;ENABLE_NETWORK;ENABLE_MONO;ENABLE_PROFILER;UNITY_EDITOR;UNITY_EDITOR_64;UNITY_EDITOR_OSX;UNITY_TEAM_LICENSE;UNITY_PRO_LICENSE;NET20</DefineConstants>
+	<ErrorReport>prompt</ErrorReport>
+	<WarningLevel>4</WarningLevel>
+	<NoWarn>0169</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+	<DebugType>pdbonly</DebugType>
+	<Optimize>true</Optimize>
+	<OutputPath>Temp\bin\Release\</OutputPath>
+	<DefineConstants>TRACE</DefineConstants>
+	<ErrorReport>prompt</ErrorReport>
+	<WarningLevel>4</WarningLevel>
+	<NoWarn>0169</NoWarn>
+  </PropertyGroup>
+  <ItemGroup>
+	<Reference Include="System" />
+    <Reference Include="System.XML" />
+	<Reference Include="System.Core" />
+	<Reference Include="System.Xml.Linq" />
+	<Reference Include="UnityEngine">
+	  <HintPath>/Applications/Unity/Unity.app/Contents/Frameworks/Managed/UnityEngine.dll</HintPath>
+	</Reference>
+	<Reference Include="UnityEditor">
+	  <HintPath>/Applications/Unity/Unity.app/Contents/Frameworks/Managed/UnityEditor.dll</HintPath>
+	</Reference>
+  </ItemGroup>
+  <ItemGroup>
+     <Compile Include="Assets\Plugins\Newtonsoft.Json\Aot\EnumerationExtension.cs" />
+     <Compile Include="Assets\Plugins\Newtonsoft.Json\Bson\BsonBinaryType.cs" />
+     <Compile Include="Assets\Plugins\Newtonsoft.Json\Bson\BsonBinaryWriter.cs" />
+     <Compile Include="Assets\Plugins\Newtonsoft.Json\Bson\BsonObjectId.cs" />
+     <Compile Include="Assets\Plugins\Newtonsoft.Json\Bson\BsonReader.cs" />
+     <Compile Include="Assets\Plugins\Newtonsoft.Json\Bson\BsonToken.cs" />
+     <Compile Include="Assets\Plugins\Newtonsoft.Json\Bson\BsonType.cs" />
+     <Compile Include="Assets\Plugins\Newtonsoft.Json\Bson\BsonWriter.cs" />
+     <Compile Include="Assets\Plugins\Newtonsoft.Json\ConstructorHandling.cs" />
+     <Compile Include="Assets\Plugins\Newtonsoft.Json\Converters\BinaryConverter.cs" />
+     <Compile Include="Assets\Plugins\Newtonsoft.Json\Converters\BsonObjectIdConverter.cs" />
+     <Compile Include="Assets\Plugins\Newtonsoft.Json\Converters\CustomCreationConverter.cs" />
+     <Compile Include="Assets\Plugins\Newtonsoft.Json\Converters\DataSetConverter.cs" />
+     <Compile Include="Assets\Plugins\Newtonsoft.Json\Converters\DataTableConverter.cs" />
+     <Compile Include="Assets\Plugins\Newtonsoft.Json\Converters\DateTimeConverterBase.cs" />
+     <Compile Include="Assets\Plugins\Newtonsoft.Json\Converters\DiscriminatedUnionConverter.cs" />
+     <Compile Include="Assets\Plugins\Newtonsoft.Json\Converters\EntityKeyMemberConverter.cs" />
+     <Compile Include="Assets\Plugins\Newtonsoft.Json\Converters\ExpandoObjectConverter.cs" />
+     <Compile Include="Assets\Plugins\Newtonsoft.Json\Converters\IsoDateTimeConverter.cs" />
+     <Compile Include="Assets\Plugins\Newtonsoft.Json\Converters\JavaScriptDateTimeConverter.cs" />
+     <Compile Include="Assets\Plugins\Newtonsoft.Json\Converters\JsonValueConverter.cs" />
+     <Compile Include="Assets\Plugins\Newtonsoft.Json\Converters\KeyValuePairConverter.cs" />
+     <Compile Include="Assets\Plugins\Newtonsoft.Json\Converters\RegexConverter.cs" />
+     <Compile Include="Assets\Plugins\Newtonsoft.Json\Converters\StringEnumConverter.cs" />
+     <Compile Include="Assets\Plugins\Newtonsoft.Json\Converters\VersionConverter.cs" />
+     <Compile Include="Assets\Plugins\Newtonsoft.Json\Converters\XmlNodeConverter.cs" />
+     <Compile Include="Assets\Plugins\Newtonsoft.Json\DateFormatHandling.cs" />
+     <Compile Include="Assets\Plugins\Newtonsoft.Json\DateParseHandling.cs" />
+     <Compile Include="Assets\Plugins\Newtonsoft.Json\DateTimeZoneHandling.cs" />
+     <Compile Include="Assets\Plugins\Newtonsoft.Json\DefaultValueHandling.cs" />
+     <Compile Include="Assets\Plugins\Newtonsoft.Json\FloatFormatHandling.cs" />
+     <Compile Include="Assets\Plugins\Newtonsoft.Json\FloatParseHandling.cs" />
+     <Compile Include="Assets\Plugins\Newtonsoft.Json\FormatterAssemblyStyle.cs" />
+     <Compile Include="Assets\Plugins\Newtonsoft.Json\Formatting.cs" />
+     <Compile Include="Assets\Plugins\Newtonsoft.Json\IJsonLineInfo.cs" />
+     <Compile Include="Assets\Plugins\Newtonsoft.Json\JsonArrayAttribute.cs" />
+     <Compile Include="Assets\Plugins\Newtonsoft.Json\JsonConstructorAttribute.cs" />
+     <Compile Include="Assets\Plugins\Newtonsoft.Json\JsonContainerAttribute.cs" />
+     <Compile Include="Assets\Plugins\Newtonsoft.Json\JsonConvert.cs" />
+     <Compile Include="Assets\Plugins\Newtonsoft.Json\JsonConverter.cs" />
+     <Compile Include="Assets\Plugins\Newtonsoft.Json\JsonConverterAttribute.cs" />
+     <Compile Include="Assets\Plugins\Newtonsoft.Json\JsonConverterCollection.cs" />
+     <Compile Include="Assets\Plugins\Newtonsoft.Json\JsonDictionaryAttribute.cs" />
+     <Compile Include="Assets\Plugins\Newtonsoft.Json\JsonException.cs" />
+     <Compile Include="Assets\Plugins\Newtonsoft.Json\JsonExtensionDataAttribute.cs" />
+     <Compile Include="Assets\Plugins\Newtonsoft.Json\JsonIgnoreAttribute.cs" />
+     <Compile Include="Assets\Plugins\Newtonsoft.Json\JsonObjectAttribute.cs" />
+     <Compile Include="Assets\Plugins\Newtonsoft.Json\JsonPosition.cs" />
+     <Compile Include="Assets\Plugins\Newtonsoft.Json\JsonPropertyAttribute.cs" />
+     <Compile Include="Assets\Plugins\Newtonsoft.Json\JsonReader.cs" />
+     <Compile Include="Assets\Plugins\Newtonsoft.Json\JsonReaderException.cs" />
+     <Compile Include="Assets\Plugins\Newtonsoft.Json\JsonSerializationException.cs" />
+     <Compile Include="Assets\Plugins\Newtonsoft.Json\JsonSerializer.cs" />
+     <Compile Include="Assets\Plugins\Newtonsoft.Json\JsonSerializerSettings.cs" />
+     <Compile Include="Assets\Plugins\Newtonsoft.Json\JsonTextReader.cs" />
+     <Compile Include="Assets\Plugins\Newtonsoft.Json\JsonTextWriter.cs" />
+     <Compile Include="Assets\Plugins\Newtonsoft.Json\JsonToken.cs" />
+     <Compile Include="Assets\Plugins\Newtonsoft.Json\JsonValidatingReader.cs" />
+     <Compile Include="Assets\Plugins\Newtonsoft.Json\JsonWriter.cs" />
+     <Compile Include="Assets\Plugins\Newtonsoft.Json\JsonWriterException.cs" />
+     <Compile Include="Assets\Plugins\Newtonsoft.Json\Linq\Extensions.cs" />
+     <Compile Include="Assets\Plugins\Newtonsoft.Json\Linq\IJEnumerable.cs" />
+     <Compile Include="Assets\Plugins\Newtonsoft.Json\Linq\JArray.cs" />
+     <Compile Include="Assets\Plugins\Newtonsoft.Json\Linq\JConstructor.cs" />
+     <Compile Include="Assets\Plugins\Newtonsoft.Json\Linq\JContainer.cs" />
+     <Compile Include="Assets\Plugins\Newtonsoft.Json\Linq\JEnumerable.cs" />
+     <Compile Include="Assets\Plugins\Newtonsoft.Json\Linq\JObject.cs" />
+     <Compile Include="Assets\Plugins\Newtonsoft.Json\Linq\JProperty.cs" />
+     <Compile Include="Assets\Plugins\Newtonsoft.Json\Linq\JPropertyDescriptor.cs" />
+     <Compile Include="Assets\Plugins\Newtonsoft.Json\Linq\JPropertyKeyedCollection.cs" />
+     <Compile Include="Assets\Plugins\Newtonsoft.Json\Linq\JRaw.cs" />
+     <Compile Include="Assets\Plugins\Newtonsoft.Json\Linq\JToken.cs" />
+     <Compile Include="Assets\Plugins\Newtonsoft.Json\Linq\JTokenEqualityComparer.cs" />
+     <Compile Include="Assets\Plugins\Newtonsoft.Json\Linq\JTokenReader.cs" />
+     <Compile Include="Assets\Plugins\Newtonsoft.Json\Linq\JTokenType.cs" />
+     <Compile Include="Assets\Plugins\Newtonsoft.Json\Linq\JTokenWriter.cs" />
+     <Compile Include="Assets\Plugins\Newtonsoft.Json\Linq\JValue.cs" />
+     <Compile Include="Assets\Plugins\Newtonsoft.Json\Linq\JsonPath\ArrayIndexFilter.cs" />
+     <Compile Include="Assets\Plugins\Newtonsoft.Json\Linq\JsonPath\ArrayMultipleIndexFilter.cs" />
+     <Compile Include="Assets\Plugins\Newtonsoft.Json\Linq\JsonPath\ArraySliceFilter.cs" />
+     <Compile Include="Assets\Plugins\Newtonsoft.Json\Linq\JsonPath\FieldFilter.cs" />
+     <Compile Include="Assets\Plugins\Newtonsoft.Json\Linq\JsonPath\FieldMultipleFilter.cs" />
+     <Compile Include="Assets\Plugins\Newtonsoft.Json\Linq\JsonPath\JPath.cs" />
+     <Compile Include="Assets\Plugins\Newtonsoft.Json\Linq\JsonPath\PathFilter.cs" />
+     <Compile Include="Assets\Plugins\Newtonsoft.Json\Linq\JsonPath\QueryExpression.cs" />
+     <Compile Include="Assets\Plugins\Newtonsoft.Json\Linq\JsonPath\QueryFilter.cs" />
+     <Compile Include="Assets\Plugins\Newtonsoft.Json\Linq\JsonPath\ScanFilter.cs" />
+     <Compile Include="Assets\Plugins\Newtonsoft.Json\MemberSerialization.cs" />
+     <Compile Include="Assets\Plugins\Newtonsoft.Json\MissingMemberHandling.cs" />
+     <Compile Include="Assets\Plugins\Newtonsoft.Json\NullValueHandling.cs" />
+     <Compile Include="Assets\Plugins\Newtonsoft.Json\ObjectCreationHandling.cs" />
+     <Compile Include="Assets\Plugins\Newtonsoft.Json\PreserveReferencesHandling.cs" />
+     <Compile Include="Assets\Plugins\Newtonsoft.Json\ReferenceLoopHandling.cs" />
+     <Compile Include="Assets\Plugins\Newtonsoft.Json\Required.cs" />
+     <Compile Include="Assets\Plugins\Newtonsoft.Json\Schema\Extensions.cs" />
+     <Compile Include="Assets\Plugins\Newtonsoft.Json\Schema\JsonSchema.cs" />
+     <Compile Include="Assets\Plugins\Newtonsoft.Json\Schema\JsonSchemaBuilder.cs" />
+     <Compile Include="Assets\Plugins\Newtonsoft.Json\Schema\JsonSchemaConstants.cs" />
+     <Compile Include="Assets\Plugins\Newtonsoft.Json\Schema\JsonSchemaException.cs" />
+     <Compile Include="Assets\Plugins\Newtonsoft.Json\Schema\JsonSchemaGenerator.cs" />
+     <Compile Include="Assets\Plugins\Newtonsoft.Json\Schema\JsonSchemaModel.cs" />
+     <Compile Include="Assets\Plugins\Newtonsoft.Json\Schema\JsonSchemaModelBuilder.cs" />
+     <Compile Include="Assets\Plugins\Newtonsoft.Json\Schema\JsonSchemaNode.cs" />
+     <Compile Include="Assets\Plugins\Newtonsoft.Json\Schema\JsonSchemaNodeCollection.cs" />
+     <Compile Include="Assets\Plugins\Newtonsoft.Json\Schema\JsonSchemaResolver.cs" />
+     <Compile Include="Assets\Plugins\Newtonsoft.Json\Schema\JsonSchemaType.cs" />
+     <Compile Include="Assets\Plugins\Newtonsoft.Json\Schema\JsonSchemaWriter.cs" />
+     <Compile Include="Assets\Plugins\Newtonsoft.Json\Schema\UndefinedSchemaIdHandling.cs" />
+     <Compile Include="Assets\Plugins\Newtonsoft.Json\Schema\ValidationEventArgs.cs" />
+     <Compile Include="Assets\Plugins\Newtonsoft.Json\Schema\ValidationEventHandler.cs" />
+     <Compile Include="Assets\Plugins\Newtonsoft.Json\Serialization\CachedAttributeGetter.cs" />
+     <Compile Include="Assets\Plugins\Newtonsoft.Json\Serialization\CamelCasePropertyNamesContractResolver.cs" />
+     <Compile Include="Assets\Plugins\Newtonsoft.Json\Serialization\DefaultContractResolver.cs" />
+     <Compile Include="Assets\Plugins\Newtonsoft.Json\Serialization\DefaultReferenceResolver.cs" />
+     <Compile Include="Assets\Plugins\Newtonsoft.Json\Serialization\DefaultSerializationBinder.cs" />
+     <Compile Include="Assets\Plugins\Newtonsoft.Json\Serialization\DiagnosticsTraceWriter.cs" />
+     <Compile Include="Assets\Plugins\Newtonsoft.Json\Serialization\DynamicValueProvider.cs" />
+     <Compile Include="Assets\Plugins\Newtonsoft.Json\Serialization\ErrorContext.cs" />
+     <Compile Include="Assets\Plugins\Newtonsoft.Json\Serialization\ErrorEventArgs.cs" />
+     <Compile Include="Assets\Plugins\Newtonsoft.Json\Serialization\ExpressionValueProvider.cs" />
+     <Compile Include="Assets\Plugins\Newtonsoft.Json\Serialization\IContractResolver.cs" />
+     <Compile Include="Assets\Plugins\Newtonsoft.Json\Serialization\IReferenceResolver.cs" />
+     <Compile Include="Assets\Plugins\Newtonsoft.Json\Serialization\ITraceWriter.cs" />
+     <Compile Include="Assets\Plugins\Newtonsoft.Json\Serialization\IValueProvider.cs" />
+     <Compile Include="Assets\Plugins\Newtonsoft.Json\Serialization\JsonArrayContract.cs" />
+     <Compile Include="Assets\Plugins\Newtonsoft.Json\Serialization\JsonContainerContract.cs" />
+     <Compile Include="Assets\Plugins\Newtonsoft.Json\Serialization\JsonContract.cs" />
+     <Compile Include="Assets\Plugins\Newtonsoft.Json\Serialization\JsonDictionaryContract.cs" />
+     <Compile Include="Assets\Plugins\Newtonsoft.Json\Serialization\JsonDynamicContract.cs" />
+     <Compile Include="Assets\Plugins\Newtonsoft.Json\Serialization\JsonFormatterConverter.cs" />
+     <Compile Include="Assets\Plugins\Newtonsoft.Json\Serialization\JsonISerializableContract.cs" />
+     <Compile Include="Assets\Plugins\Newtonsoft.Json\Serialization\JsonLinqContract.cs" />
+     <Compile Include="Assets\Plugins\Newtonsoft.Json\Serialization\JsonObjectContract.cs" />
+     <Compile Include="Assets\Plugins\Newtonsoft.Json\Serialization\JsonPrimitiveContract.cs" />
+     <Compile Include="Assets\Plugins\Newtonsoft.Json\Serialization\JsonProperty.cs" />
+     <Compile Include="Assets\Plugins\Newtonsoft.Json\Serialization\JsonPropertyCollection.cs" />
+     <Compile Include="Assets\Plugins\Newtonsoft.Json\Serialization\JsonSerializerInternalBase.cs" />
+     <Compile Include="Assets\Plugins\Newtonsoft.Json\Serialization\JsonSerializerInternalReader.cs" />
+     <Compile Include="Assets\Plugins\Newtonsoft.Json\Serialization\JsonSerializerInternalWriter.cs" />
+     <Compile Include="Assets\Plugins\Newtonsoft.Json\Serialization\JsonSerializerProxy.cs" />
+     <Compile Include="Assets\Plugins\Newtonsoft.Json\Serialization\JsonStringContract.cs" />
+     <Compile Include="Assets\Plugins\Newtonsoft.Json\Serialization\JsonTypeReflector.cs" />
+     <Compile Include="Assets\Plugins\Newtonsoft.Json\Serialization\LateBoundMetadataTypeAttribute.cs" />
+     <Compile Include="Assets\Plugins\Newtonsoft.Json\Serialization\MemoryTraceWriter.cs" />
+     <Compile Include="Assets\Plugins\Newtonsoft.Json\Serialization\ObjectConstructor.cs" />
+     <Compile Include="Assets\Plugins\Newtonsoft.Json\Serialization\OnErrorAttribute.cs" />
+     <Compile Include="Assets\Plugins\Newtonsoft.Json\Serialization\ReflectionValueProvider.cs" />
+     <Compile Include="Assets\Plugins\Newtonsoft.Json\Serialization\TraceJsonReader.cs" />
+     <Compile Include="Assets\Plugins\Newtonsoft.Json\Serialization\TraceJsonWriter.cs" />
+     <Compile Include="Assets\Plugins\Newtonsoft.Json\SerializationBinder.cs" />
+     <Compile Include="Assets\Plugins\Newtonsoft.Json\SpecialPropertyHandling.cs" />
+     <Compile Include="Assets\Plugins\Newtonsoft.Json\StringEscapeHandling.cs" />
+     <Compile Include="Assets\Plugins\Newtonsoft.Json\TraceLevel.cs" />
+     <Compile Include="Assets\Plugins\Newtonsoft.Json\TypeNameHandling.cs" />
+     <Compile Include="Assets\Plugins\Newtonsoft.Json\Utilities\Base64Encoder.cs" />
+     <Compile Include="Assets\Plugins\Newtonsoft.Json\Utilities\BidirectionalDictionary.cs" />
+     <Compile Include="Assets\Plugins\Newtonsoft.Json\Utilities\CollectionUtils.cs" />
+     <Compile Include="Assets\Plugins\Newtonsoft.Json\Utilities\CollectionWrapper.cs" />
+     <Compile Include="Assets\Plugins\Newtonsoft.Json\Utilities\ConvertUtils.cs" />
+     <Compile Include="Assets\Plugins\Newtonsoft.Json\Utilities\DateTimeParser.cs" />
+     <Compile Include="Assets\Plugins\Newtonsoft.Json\Utilities\DateTimeUtils.cs" />
+     <Compile Include="Assets\Plugins\Newtonsoft.Json\Utilities\DictionaryWrapper.cs" />
+     <Compile Include="Assets\Plugins\Newtonsoft.Json\Utilities\DynamicProxy.cs" />
+     <Compile Include="Assets\Plugins\Newtonsoft.Json\Utilities\DynamicProxyMetaObject.cs" />
+     <Compile Include="Assets\Plugins\Newtonsoft.Json\Utilities\DynamicReflectionDelegateFactory.cs" />
+     <Compile Include="Assets\Plugins\Newtonsoft.Json\Utilities\DynamicUtils.cs" />
+     <Compile Include="Assets\Plugins\Newtonsoft.Json\Utilities\DynamicWrapper.cs" />
+     <Compile Include="Assets\Plugins\Newtonsoft.Json\Utilities\EnumUtils.cs" />
+     <Compile Include="Assets\Plugins\Newtonsoft.Json\Utilities\EnumValue.cs" />
+     <Compile Include="Assets\Plugins\Newtonsoft.Json\Utilities\EnumValues.cs" />
+     <Compile Include="Assets\Plugins\Newtonsoft.Json\Utilities\ExpressionReflectionDelegateFactory.cs" />
+     <Compile Include="Assets\Plugins\Newtonsoft.Json\Utilities\FSharpUtils.cs" />
+     <Compile Include="Assets\Plugins\Newtonsoft.Json\Utilities\ILGeneratorExtensions.cs" />
+     <Compile Include="Assets\Plugins\Newtonsoft.Json\Utilities\ImmutableCollectionsUtils.cs" />
+     <Compile Include="Assets\Plugins\Newtonsoft.Json\Utilities\JavaScriptUtils.cs" />
+     <Compile Include="Assets\Plugins\Newtonsoft.Json\Utilities\LateBoundReflectionDelegateFactory.cs" />
+     <Compile Include="Assets\Plugins\Newtonsoft.Json\Utilities\LinqBridge.cs" />
+     <Compile Include="Assets\Plugins\Newtonsoft.Json\Utilities\MathUtils.cs" />
+     <Compile Include="Assets\Plugins\Newtonsoft.Json\Utilities\MethodCall.cs" />
+     <Compile Include="Assets\Plugins\Newtonsoft.Json\Utilities\MiscellaneousUtils.cs" />
+     <Compile Include="Assets\Plugins\Newtonsoft.Json\Utilities\ReflectionDelegateFactory.cs" />
+     <Compile Include="Assets\Plugins\Newtonsoft.Json\Utilities\ReflectionUtils.cs" />
+     <Compile Include="Assets\Plugins\Newtonsoft.Json\Utilities\StringBuffer.cs" />
+     <Compile Include="Assets\Plugins\Newtonsoft.Json\Utilities\StringReference.cs" />
+     <Compile Include="Assets\Plugins\Newtonsoft.Json\Utilities\StringUtils.cs" />
+     <Compile Include="Assets\Plugins\Newtonsoft.Json\Utilities\ThreadSafeStore.cs" />
+     <Compile Include="Assets\Plugins\Newtonsoft.Json\Utilities\TypeExtensions.cs" />
+     <Compile Include="Assets\Plugins\Newtonsoft.Json\Utilities\ValidationUtils.cs" />
+     <Compile Include="Assets\Plugins\Newtonsoft.Json\WriteState.cs" />
+     <None Include="Assets\Resources\Shaders\CPX Custom\Unlit\Mobile - Unlit Vertex Color.shader" />
+     <None Include="Assets\Resources\Shaders\CPX Custom\VertexLit\Mobile - VertexLit Transparent No Color.shader" />
+     <None Include="Assets\Resources\Shaders\CPX Custom\Particle\Mobile - Particle - AlphaBlend Normal.shader" />
+     <None Include="Assets\Resources\Shaders\CPX Custom\VertexLit\Mobile - VertexLit No Z GLSL.shader" />
+     <None Include="Assets\Resources\Shaders\CPX Custom\Outline - Pixel GLSL.shader" />
+     <None Include="Assets\Resources\Shaders\CPX Custom\Rim\Mobile - Unlit Texture - Fixed Rim GLSL.shader" />
+     <None Include="Assets\Resources\Shaders\CPX Custom\Lightmap\Mobile - Unlit Lightmapped CG.shader" />
+     <None Include="Assets\Resources\Shaders\CPX Custom\Saturation Control\Transparent\Mobile - Unlit Transparent - Saturation Control GLSL.shader" />
+     <None Include="Assets\Resources\Shaders\CPX Custom\Gradient\Mobile - Unlit Texture - Gradient Map + Rim CG.shader" />
+     <None Include="Assets\Resources\Shaders\CPX Custom\Text\Mobile - Text GLSL.shader" />
+     <None Include="Assets\Resources\Shaders\CPX Custom\Lightmap\Mobile - Unlit Beast Lightmapped CG.shader" />
+     <None Include="Assets\Resources\Shaders\CPX Custom\VertexLit\Mobile - VertexLit Transparent GLSL No Color.shader" />
+     <None Include="Assets\Resources\Shaders\CPX Custom\Lightmap\Mobile - Unlit Lightmapped wMultiply GLSL.shader" />
+     <None Include="Assets\Resources\Shaders\CPX Custom\Gradient\Mobile - Unlit Texture - Gradient Map GLSL.shader" />
+     <None Include="Assets\Resources\Shaders\CPX Custom\Diffuse\Mobile - Diffuse GLSL.shader" />
+     <None Include="Assets\Resources\Shaders\CPX Custom\Saturation Control\Mobile - Unlit Vertex Color - Saturation Control CG.shader" />
+     <None Include="Assets\Resources\Ship\RoomDefinitions.txt" />
+     <None Include="Assets\Resources\Shaders\CPX Custom\Reflection\Mobile - Reflection (Cubemap) GLSL.shader" />
+     <None Include="Assets\Resources\Shaders\CPX Custom\Unlit\Mobile - Unlit Texture GLSL.shader" />
+     <None Include="Assets\Resources\Shaders\CPX Custom\Shadows\Mobile - Self Shadows CG.shader" />
+     <None Include="Assets\Resources\Shaders\CPX Custom\Color Selection\Rim\Mobile - Unlit Texture - 3 Color Selection Rim GLSL.shader" />
+     <None Include="Assets\Resources\Shaders\CPX Custom\Text\Mobile - Text (Outline) GLSL.shader" />
+     <None Include="Assets\Resources\Shaders\CPX Custom\Color Selection\Mobile - Unlit Texture - 2 Color Selection GLSL.shader" />
+     <None Include="Assets\Resources\Shaders\CPX Custom\Transparent\Mobile - Unlit Transparent GLSL.shader" />
+     <None Include="Assets\Resources\Shaders\CPX Custom\Color Selection\Rim\Mobile - Unlit Texture - 1 Color Selection Rim GLSL.shader" />
+     <None Include="Assets\Resources\Shaders\CPX Custom\Lightmap\Mobile - Unlit Beast Lightmapped GLSL.shader" />
+     <None Include="Assets\Resources\Shaders\CPX Custom\VertexLit\Mobile - VertexLit Transparent Super Bright.shader" />
+     <None Include="Assets\Resources\Shaders\CPX Custom\Color Selection\Mobile - Unlit Transparent - 1 Color Selection CG.shader" />
+     <None Include="Assets\Resources\Shaders\CPX Custom\Color Selection\Mobile - Unlit Texture - 3 Color Selection GLSL.shader" />
+     <None Include="Assets\Resources\Shaders\CPX Custom\Reflection\Mobile - Reflection (Cubemap) Alpha CG.shader" />
+     <None Include="Assets\Resources\Shaders\CPX Custom\VertexLit\Mobile - VertexLit Transparent Super Bright GLSL.shader" />
+     <None Include="Assets\Resources\Shaders\CPX Custom\Specular\Mobile - Unlit Texture - Specular GLSL.shader" />
+     <None Include="Assets\Resources\Shaders\CPX Custom\Specular\Mobile - Unlit Texture - Specular Map (Fixed) CG.shader" />
+     <None Include="Assets\Resources\Shaders\CPX Custom\Text\Mobile - Text (Alpha Only) GLSL.shader" />
+     <None Include="Assets\Resources\Shaders\CPX Custom\Shadows\Mobile - Shadow Receiver CG.shader" />
+     <None Include="Assets\Resources\Shaders\CPX Custom\Particle\Mobile - Particle - Additive.shader" />
+     <None Include="Assets\Resources\Ship\Components\Definitions\Engine Mark I.txt" />
+     <None Include="Assets\Resources\Ship\Components\Definitions\Crazy Test Mark I.txt" />
+     <None Include="Assets\Resources\Shaders\CPX Custom\Gradient\Mobile - Unlit Texture - Gradient Map CG.shader" />
+     <None Include="Assets\Resources\Ship\Components\Definitions\Weapon Enhancer I.txt" />
+     <None Include="Assets\Resources\Shaders\CPX Custom\Gradient\Mobile - Unlit Texture - Gradient Map + Rim  GLSL.shader" />
+     <None Include="Assets\Resources\Shaders\CPX Custom\Depth Mask.shader" />
+     <None Include="Assets\Resources\Shaders\CPX Custom\Specular\Mobile - Unlit Texture - Specular Map CG.shader" />
+     <None Include="Assets\Resources\Shaders\CPX Custom\Text\Mobile - Text (Outline) CG.shader" />
+     <None Include="Assets\Resources\Shaders\CPX Custom\Diffuse\Mobile - Diffuse (Lightprobe Support) CG.shader" />
+     <None Include="Assets\Resources\Shaders\CPX Custom\Lightmap\Mobile - Unlit Lightmap.shader" />
+     <None Include="Assets\Resources\Shaders\CPX Custom\Color Selection\Mobile - Unlit Texture - 2 Color Selection CG.shader" />
+     <None Include="Assets\Resources\Shaders\CPX Custom\Shadows\Mobile - Shadow Caster CG.shader" />
+     <None Include="Assets\Resources\Shaders\CPX Custom\Color Selection\Mobile - Unlit Texture - 1 Color Selection GLSL.shader" />
+     <None Include="Assets\Resources\Shaders\CPX Custom\Lightmap\Mobile - Unlit Beast Lightmapped wSpecular CG.shader" />
+     <None Include="Assets\Resources\Ship\Components\Definitions\Laser Mark II.txt" />
+     <None Include="Assets\Resources\Shaders\CPX Custom\Rim\Mobile - Unlit Texture - Fixed Rim CG.shader" />
+     <None Include="Assets\Resources\Ship\Components\Definitions\Burst Laser.txt" />
+     <None Include="Assets\Resources\Shaders\CPX Custom\Lightmap\Mobile - Unlit Lightmapped wMultiply CG.shader" />
+     <None Include="Assets\Resources\Shaders\CPX Custom\Color Selection\Mobile - Unlit Transparent - 2 Color Selection CG.shader" />
+     <None Include="Assets\Resources\Ship\Components\Definitions\Large Shield.txt" />
+     <None Include="Assets\Resources\Shaders\CPX Custom\Color Selection\Mobile - Unlit Texture - 1 Color Selection CG.shader" />
+     <None Include="Assets\Resources\Shaders\CPX Custom\Color Selection\Mobile - Unlit Transparent - 3 Color Selection CG.shader" />
+     <None Include="Assets\Resources\Shaders\CPX Custom\Saturation Control\Mobile - Unlit Texture - Saturation Control CG.shader" />
+     <None Include="Assets\Resources\Shaders\CPX Custom\Transparent\Cutout\Mobile - Cutout GLSL.shader" />
+     <None Include="Assets\Resources\Ship\Components\Definitions\Laser Mark I.txt" />
+     <None Include="Assets\Resources\Shaders\CPX Custom\Lightmap\Mobile - Unlit Lightmapped GLSL.shader" />
+     <None Include="Assets\Resources\Shaders\CPX Custom\Transparent\Mobile - Unlit Transparent GLSL No Color.shader" />
+     <None Include="Assets\Resources\Shaders\CPX Custom\Transparent\Mobile - Unlit Transparent.shader" />
+     <None Include="Assets\Resources\Shaders\CPX Custom\Transparent\Cutout\Mobile - Cutout CG.shader" />
+     <None Include="Assets\Resources\Shaders\CPX Custom\Specular\Mobile - Unlit Texture - Specular Map (Fixed) GLSL.shader" />
+     <None Include="Assets\Resources\Shaders\CPX Custom\VertexLit\Mobile - VertexLit.shader" />
+     <None Include="Assets\Resources\Shaders\CPX Custom\Saturation Control\Transparent\Mobile - Unlit Transparent - Saturation Control CG.shader" />
+     <None Include="Assets\Resources\Shaders\CPX Custom\Unlit\Mobile - Unlit Vertex Color Super Bright.shader" />
+     <None Include="Assets\Resources\Shaders\CPX Custom\Gradient\Mobile - Unlit Texture - Gradient CG.shader" />
+     <None Include="Assets\Resources\Shaders\CPX Custom\Gradient\Mobile - Unlit Texture - Gradient GLSL.shader" />
+     <None Include="Assets\Resources\Ship\Components\Definitions\Basic Bridge.txt" />
+     <None Include="Assets\Resources\Shaders\CPX Custom\Unlit\Mobile - Unlit Vertex Color GLSL.shader" />
+     <None Include="Assets\Resources\Shaders\CPX Custom\Specular\Mobile - Unlit Texture - Specular CG.shader" />
+     <None Include="Assets\Resources\Shaders\CPX Custom\Color Selection\Mobile - Unlit Transparent - 1 Color Selection GLSL.shader" />
+     <None Include="Assets\Resources\Shaders\CPX Custom\Saturation Control\Mobile - Unlit Texture - Saturation Control GLSL.shader" />
+     <None Include="Assets\Resources\Shaders\CPX Custom\Color Selection\Mobile - Unlit Texture - 3 Color Selection CG.shader" />
+     <None Include="Assets\Resources\Shaders\CPX Custom\Particle\Mobile - Particle - AlphaBlend.shader" />
+     <None Include="Assets\Resources\Ship\Components\Definitions\Basic Armor.txt" />
+     <None Include="Assets\Resources\Shaders\CPX Custom\Unlit\Mobile - Unlit Vertex Color Super Bright GLSL.shader" />
+     <None Include="Assets\Resources\Shaders\CPX Custom\Color Selection\Mobile - Unlit Transparent - 2 Color Selection GLSL.shader" />
+     <None Include="Assets\Resources\Shaders\CPX Custom\VertexLit\Mobile - VertexLit No Z.shader" />
+     <None Include="Assets\Resources\Shaders\CPX Custom\VertexLit\Mobile - VertexLit GLSL.shader" />
+     <None Include="Assets\Resources\Shaders\CPX Custom\VertexLit\Mobile - VertexLit Transparent.shader" />
+     <None Include="Assets\Resources\Shaders\CPX Custom\Saturation Control\Mobile - Unlit Vertex Color - Saturation Control GLSL.shader" />
+     <None Include="Assets\Resources\Shaders\CPX Custom\Text\Mobile - Text CG.shader" />
+     <None Include="Assets\Resources\Shaders\CPX Custom\Specular\Mobile - Unlit Texture - Specular Map GLSL.shader" />
+     <None Include="Assets\Resources\Ship\Components\Definitions\Beam Mark I.txt" />
+     <None Include="Assets\Resources\Shaders\CPX Custom\Lightmap\Mobile - Unlit Beast Lightmapped wSpecular GLSL.shader" />
+     <None Include="Assets\Resources\Shaders\CPX Custom\Reflection\Mobile - Reflection (Cubemap) Alpha GLSL.shader" />
+     <None Include="Assets\Resources\Shaders\CPX Custom\Color Selection\Rim\Mobile - Unlit Texture - 2 Color Selection Rim GLSL.shader" />
+     <None Include="Assets\Resources\Shaders\CPX Custom\Text\Mobile - Text.shader" />
+     <None Include="Assets\Resources\Shaders\CPX Custom\VertexLit\Mobile - VertexLit Transparent GLSL.shader" />
+     <None Include="Assets\Resources\Shaders\CPX Custom\Reflection\Mobile - Reflection (Cubemap) CG.shader" />
+     <None Include="Assets\Resources\Shaders\CPX Custom\Color Selection\Mobile - Unlit Transparent - 3 Color Selection GLSL.shader" />
+ <Reference Include="UnityEngine.UI">
+ <HintPath>/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
+ </Reference>
+ <Reference Include="LumenWorks.Framework.IO">
+ <HintPath>/Users/franosailer/UnityProjects/Peace/Peace1.0/Assets/Plugins/LumenWorks/LumenWorks.Framework.IO.dll</HintPath>
+ </Reference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+	   Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  
+</Project>
