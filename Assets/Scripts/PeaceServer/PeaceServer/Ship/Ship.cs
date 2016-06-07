@@ -173,6 +173,32 @@ public class Ship{
 		set{currentShipName = value;}
 	}
 
+	public void AdvanceTurn(){
+
+		foreach(ShipRoom room in roomList){
+
+			if(room.CurrentComponent == null) continue;
+
+			List<ShipComponentStatus> expiredStatuses = new List<ShipComponentStatus>();
+
+			foreach(ShipComponentStatus status in room.CurrentComponent.Statuses){
+
+				status.turnsLeft--;
+
+				if(status.turnsLeft == 0){
+
+					Console.WriteLine("status: " + status.statusType + " has expired on room: " + room.ID);
+					expiredStatuses.Add(status);
+				}
+			}
+
+			foreach(ShipComponentStatus expiredStatus in expiredStatuses){
+				
+				room.CurrentComponent.Statuses.Remove(expiredStatus);
+			}
+		}
+	}
+
 	public ShipRoom GetRandomRoom(){
 
 		if(roomList.Count > 0){

@@ -79,14 +79,19 @@ public class Beam : ComponentAbility{
 			}
 
 
-			int damage = RandomNumber.Range(currentMinDamage, currentMaxDamage + 1);
+			float damage = RandomNumber.Range(currentMinDamage, currentMaxDamage + 1);
 
 			newResult.Add(new ChargeEvent(currentSlice, component.Room.OwnerID, component.Room.ID));
 
 			currentSlice += startChargeTime; 
 
+			float damageMultiplier = component.MaxValueOfStatus("enhance");
+
+			damage = damage * ((100.0f + damageMultiplier) / 100.0f);
+
+
 			FireEvent newFireEvent = new FireEvent(currentSlice, component.Room.OwnerID, 
-				component.Room.ID, target.OwnerID, -1, target.ID, damage); // -1 = SUPER SPEED FOR BEAM WEAPONS!
+				component.Room.ID, target.OwnerID, -1, target.ID, (int)damage); // -1 = SUPER SPEED FOR BEAM WEAPONS!
 
 			System.Console.WriteLine("added fire event with owner: " + component.Room.OwnerID + " and damage: " + damage);
 

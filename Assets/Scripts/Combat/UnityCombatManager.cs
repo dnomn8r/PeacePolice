@@ -72,6 +72,8 @@ public class UnityCombatManager{
 			controller.Display.UpdateEnergy();
 		}
 
+		//game.AdvanceTurn();
+
 		if(isGoingToWin){
 
 			hasWon = true;
@@ -243,6 +245,7 @@ public class UnityCombatManager{
 					controller.Player.SetEnergy(kvp.Value);
 
 				}
+
 
 //				if(UnityCombatScheduler.Instance.CombatScheduler == null){
 //					UnityCombatScheduler.Instance.CombatScheduler = game.Scheduler;

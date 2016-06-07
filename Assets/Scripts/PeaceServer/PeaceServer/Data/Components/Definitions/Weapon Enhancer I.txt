@@ -9,6 +9,6 @@
   
   "abilities": [
     {"type": "LaserEnhancer", "details":
-    "{\"bonusPercent\":100}"}
+    "{\"bonusPercent\":100,\"status\":\"enhance\"}"}
   ]
 }

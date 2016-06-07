@@ -125,7 +125,8 @@ public class PeaceMultiplayerGame{
 					Console.Write(".");
 				}
 
-
+				//SERVER IS DOING EXTRA ENHANCE DAMAGE CORRECTLY.  CLIENT IS DOUBLING UP ON IT! NEED TO 
+				//ADD IT TO THE ORIGINAL CREATION OF EVENT MAYBE, ALSO CLIENT NEEDS TO HANDLE EXPIRING OF STATUSES
 
 				Dictionary<string, int> energies = game.AdvanceTurn();
 
@@ -175,7 +176,7 @@ public class PeaceMultiplayerGame{
 
 			timeLeftInTurn -= serverCheckDelayMS;
 
-			Console.WriteLine("Time left in turn: " + timeLeftInTurn);
+			//Console.WriteLine("Time left in turn: " + timeLeftInTurn);
 
 			done = CheckForGameEnd();
 

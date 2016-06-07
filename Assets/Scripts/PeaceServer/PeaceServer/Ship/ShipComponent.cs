@@ -35,6 +35,8 @@ public class ShipComponent{
 
 	private List<ComponentAbility> componentAbilities = new List<ComponentAbility>();
 
+	private List<ShipComponentStatus> statuses = new List<ShipComponentStatus>();
+
 	public ShipComponent(ShipRoom room, ShipComponentData data){
 
 		this.room = room;
@@ -60,6 +62,10 @@ public class ShipComponent{
 		}
 	}
 
+	public List<ShipComponentStatus> Statuses{
+
+		get{return statuses;}
+	}
 
 	public ShipRoom Room{
 		
@@ -77,6 +83,31 @@ public class ShipComponent{
 		return null;
 	}
 
+	public void AddStatus(ShipComponentStatus status){
+
+		Console.WriteLine("------------ adding status: " + status.statusType + " val: " + status.value + " to room: " + room.ID);
+
+		statuses.Add(status);
+	}
+
+	public float MaxValueOfStatus(string statusName){
+
+		float highestValue = 0.0f;
+
+		foreach(ShipComponentStatus status in statuses){
+
+			if(status.statusType == statusName){
+
+				if(status.value > highestValue){
+
+					highestValue = status.value;
+				}
+			}
+		}
+
+		return highestValue;
+	}
+		
 	public void AddArmour(int amount){
 		
 		currentArmour += amount;

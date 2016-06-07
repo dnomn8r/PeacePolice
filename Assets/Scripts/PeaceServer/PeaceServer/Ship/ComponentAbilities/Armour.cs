@@ -17,7 +17,6 @@ public class Armour : ComponentAbility{
 	
 	public override void ActivatePassives(){
 
-
 		foreach(ShipRoom room in component.Room.GetAdjacentRooms()){
 		
 			if(room.CurrentComponent != null){

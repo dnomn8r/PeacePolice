@@ -92,7 +92,6 @@ public class Shield : ComponentAbility{
 
 
 		component.OnShieldDamage(damage);
-
 	}
 
 

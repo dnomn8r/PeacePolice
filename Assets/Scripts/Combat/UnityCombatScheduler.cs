@@ -87,6 +87,7 @@ public class UnityCombatScheduler : MonoBehaviour {
 
 		UnityCombatManager.Instance.UpdateGameStatus();
 
+
 		timeLeftInTurn = PeaceServerClientCommon.PeaceConstants.SECONDS_PER_TURN;
 		lastRealTime = Time.realtimeSinceStartup;
 	}

@@ -63,6 +63,8 @@ public class Player{
 
 		currentEnergy = NextEnergy;
 
+		currentShip.AdvanceTurn();
+
 		return currentEnergy;
 	}
 
