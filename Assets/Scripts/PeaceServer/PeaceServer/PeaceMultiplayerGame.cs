@@ -113,7 +113,9 @@ public class PeaceMultiplayerGame{
 
 				// now execute all the actions, and get the list of action results(damage events, etc...)
 
-				List<ComponentActionResult> results = ProcessActions(combatActions);
+				List<ComponentActionResult> results = new List<ComponentActionResult>();
+
+				results.AddRange(ProcessActions(combatActions));
 
 				game.Scheduler.AddActionResults(results);
 
@@ -125,11 +127,7 @@ public class PeaceMultiplayerGame{
 					Console.Write(".");
 				}
 
-				//SERVER IS DOING EXTRA ENHANCE DAMAGE CORRECTLY.  CLIENT IS DOUBLING UP ON IT! NEED TO 
-				//ADD IT TO THE ORIGINAL CREATION OF EVENT MAYBE, ALSO CLIENT NEEDS TO HANDLE EXPIRING OF STATUSES
-
 				Dictionary<string, int> energies = game.AdvanceTurn();
-
 
 				// now we've got the results, let's send out the actions and the results to all the players
 				PeaceTurn newTurn = new PeaceTurn();
@@ -290,11 +288,15 @@ public class PeaceMultiplayerGame{
 							rooms.Add(targetRoom);
 						}
 
-						Console.WriteLine("executin action for room: " + action.roomID);
+						List<ComponentActionResult> actionResults;
 
-						List<ComponentActionResult> actionResults = ability.ExecuteAction(game, rooms);
-						
-						allResults.AddRange(actionResults);
+						Console.WriteLine("executing action for room: " + action.roomID);
+						actionResults = ability.ExecuteAction(game, rooms);
+
+						if(actionResults != null && actionResults.Count > 0){
+
+							allResults.AddRange(actionResults);
+						}
 					}
 				}else{
 

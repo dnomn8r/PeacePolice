@@ -140,6 +140,18 @@ public class ShipComponent{
 		return false;
 	}
 
+	public int GetAdjustedDamage(int originalDamage){
+
+		Console.WriteLine("original damage: " + originalDamage);
+
+		float damageMultiplier = MaxValueOfStatus("enhance");
+
+		int adjustedDamage = (int)(originalDamage * ((100.0f + damageMultiplier) / 100.0f));
+
+		Console.WriteLine("damage multiplier: " + damageMultiplier + " new dmg: " + adjustedDamage);
+
+		return adjustedDamage;
+	}
 
 	
 	public bool IsDestroyed(){

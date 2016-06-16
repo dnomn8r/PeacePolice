@@ -81,7 +81,7 @@ public abstract class ComponentAbility{
 	
 		component = c;
 	}
-	
+
 	public virtual List<ComponentActionResult> ExecuteAction(PeaceGame game, List<ShipRoom> targetRooms){
 
 		return new List<ComponentActionResult>();

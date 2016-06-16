@@ -261,13 +261,15 @@ public class FireEvent : ComponentActionResult{
 
 			if(isHit){
 
-				float damageMultiplier = sourceRoom.CurrentComponent.MaxValueOfStatus("enhance");
+//				float damageMultiplier = sourceRoom.CurrentComponent.MaxValueOfStatus("enhance");
+//
+//				damage = (int)(damage * ((100.0f + damageMultiplier) / 100.0f));
+//
+//				Console.WriteLine("damage miltipleu: " + damageMultiplier + " new dmg: " + damage);
+				int adjustedDamage = sourceRoom.CurrentComponent.GetAdjustedDamage(damage);
 
-				damage = (int)(damage * ((100.0f + damageMultiplier) / 100.0f));
 
-				Console.WriteLine("damage miltipleu: " + damageMultiplier + " new dmg: " + damage);
-
-				DamageEvent newDamageEvent = new DamageEvent(targetSlice, targetRoom.OwnerID, targetRoom.ID, damage);
+				DamageEvent newDamageEvent = new DamageEvent(targetSlice, targetRoom.OwnerID, targetRoom.ID, adjustedDamage);
 
 				System.Console.WriteLine("added damage event with owner: " + sourceRoom.OwnerID + 
 					" and damage: " + damage);

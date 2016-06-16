@@ -70,6 +70,8 @@ public class UnityCombatManager{
 
 			controller.Display.UpdateDodgeChange(0);
 			controller.Display.UpdateEnergy();
+
+			controller.Player.CurrentShip.AdvanceTurn();
 		}
 
 		//game.AdvanceTurn();

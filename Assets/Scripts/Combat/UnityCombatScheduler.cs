@@ -78,7 +78,6 @@ public class UnityCombatScheduler : MonoBehaviour {
 
 	private void startNewTurn(){
 
-
 		timeElapsedSinceLastSlice = 0;
 
 		GUIController.Instance.Activate();
@@ -86,6 +85,7 @@ public class UnityCombatScheduler : MonoBehaviour {
 		endTurnButton.gameObject.SetActive(true);
 
 		UnityCombatManager.Instance.UpdateGameStatus();
+
 
 
 		timeLeftInTurn = PeaceServerClientCommon.PeaceConstants.SECONDS_PER_TURN;

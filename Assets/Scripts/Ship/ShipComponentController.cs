@@ -59,6 +59,11 @@ public class ShipComponentController : MonoBehaviour {
 
 	}
 
+	public virtual void UpdateStatusEffectVisuals(){
+
+
+	}
+
 //	public virtual void Activate(List<AbilityTarget> targets, AbilityData data){
 //	
 //	

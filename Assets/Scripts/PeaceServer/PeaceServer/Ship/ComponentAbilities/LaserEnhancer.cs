@@ -50,7 +50,7 @@ public class LaserEnhancer : ComponentAbility{
 
 	public void OnActivate(){
 
-		Console.WriteLine("*********ACTIVATING ENHANCE");
+		//Console.WriteLine("*********ACTIVATING ENHANCE");
 		foreach(ShipRoom room in component.Room.GetAdjacentRooms()){
 
 			if(room.CurrentComponent != null){
@@ -59,11 +59,12 @@ public class LaserEnhancer : ComponentAbility{
 			}
 		}
 	}
-
+		
 	public override List<ComponentActionResult> ExecuteAction(PeaceGame game, List<ShipRoom> targets){
 
 		List<ComponentActionResult> actions = new List<ComponentActionResult>();
 
+		// we have an activation event, but it does nothing, except for visuals
 		ActivationEvent newActivationEvent = new ActivationEvent(1, component.Room.OwnerID, component.Room.ID);
 
 		actions.Add(newActivationEvent);

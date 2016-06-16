@@ -1,9 +1,7 @@
-﻿
 Microsoft Visual Studio Solution File, Format Version 11.00
-# Visual Studio 2010
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Assembly-CSharp", "Assembly-CSharp.csproj", "{3A8F82E2-44CC-E826-091B-847E75D28015}"
-EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{6CA5EFB4-6146-4B69-9E7A-5F686E3F6E34}"
+# Visual Studio 2008
+
+Project("{D811FF54-DA8D-7A2D-8EF6-2759EEAEEF25}") = "Peace1.0", "Assembly-CSharp.csproj", "{3A8F82E2-44CC-E826-091B-847E75D28015}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -16,7 +14,8 @@ Global
 		{3A8F82E2-44CC-E826-091B-847E75D28015}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3A8F82E2-44CC-E826-091B-847E75D28015}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
-	GlobalSection(NestedProjects) = preSolution
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(MonoDevelopProperties) = preSolution
 		Policies = $0
@@ -74,8 +73,5 @@ Global
 		$3.inheritsSet = VisualStudio
 		$3.inheritsScope = text/plain
 		$3.scope = text/plain
-	EndGlobalSection
-	GlobalSection(SolutionProperties) = preSolution
-		HideSolutionNode = FALSE
 	EndGlobalSection
 EndGlobal

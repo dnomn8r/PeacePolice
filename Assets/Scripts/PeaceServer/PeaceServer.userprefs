@@ -1,20 +1,28 @@
 ﻿<Properties StartupItem="PeaceServer/PeaceServer.csproj">
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|x86" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="PeaceServer/Ship/ComponentAbilities/Laser.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="PeaceServer/Ship/ComponentAbilities/ComponentAbility.cs">
     <Files>
       <File FileName="PeaceServer/PeaceServer.cs" Line="1" Column="1" />
       <File FileName="PeaceServer/PeaceMatchmaker.cs" Line="1" Column="1" />
-      <File FileName="PeaceServer/PeaceMultiplayerGame.cs" Line="1" Column="1" />
-      <File FileName="PeaceServer/Player/Player.cs" Line="1" Column="1" />
+      <File FileName="PeaceServer/PeaceMultiplayerGame.cs" Line="301" Column="43" />
+      <File FileName="PeaceServer/Player/Player.cs" Line="66" Column="20" />
       <File FileName="PeaceServer/RemotePeacePlayer.cs" Line="1" Column="1" />
-      <File FileName="PeaceServer/PeaceGame.cs" Line="1" Column="1" />
-      <File FileName="PeaceServer/Combat/CombatScheduler.cs" Line="321" Column="66" />
+      <File FileName="PeaceServer/PeaceGame.cs" Line="64" Column="3" />
+      <File FileName="PeaceServer/Combat/CombatScheduler.cs" Line="267" Column="5" />
       <File FileName="PeaceServer/PeaceServerClientCommon.cs" Line="1" Column="1" />
-      <File FileName="PeaceServer/Ship/Ship.cs" Line="239" Column="2" />
-      <File FileName="PeaceServer/Ship/ComponentAbilities/Laser.cs" Line="83" Column="10" />
-      <File FileName="PeaceServer/Ship/ComponentAbilities/ComponentAbility.cs" Line="28" Column="8" />
-      <File FileName="PeaceServer/Ship/ComponentAbilities/Shield.cs" Line="85" Column="21" />
-      <File FileName="PeaceServer/Ship/ComponentAbilities/LaserEnhancer.cs" Line="17" Column="36" />
+      <File FileName="PeaceServer/Ship/ComponentAbilities/Laser.cs" Line="70" Column="60" />
+      <File FileName="PeaceServer/Ship/ComponentAbilities/ComponentAbility.cs" Line="87" Column="1" />
+      <File FileName="PeaceServer/Ship/ComponentAbilities/Shield.cs" Line="105" Column="60" />
+      <File FileName="PeaceServer/Ship/ComponentAbilities/LaserEnhancer.cs" Line="63" Column="60" />
+      <File FileName="PeaceServer/Ship/ShipComponentStatus.cs" Line="1" Column="1" />
+      <File FileName="PeaceServer/Ship/ShipComponent.cs" Line="108" Column="23" />
+      <File FileName="PeaceServer/Ship/ComponentAbilities/RandomizedProjectile.cs" Line="67" Column="60" />
+      <File FileName="PeaceServer/Ship/ComponentAbilities/Beam.cs" Line="56" Column="60" />
+      <File FileName="PeaceServer/Ship/Ship.cs" Line="176" Column="2" />
+      <File FileName="PeaceServer/Ship/ComponentAbilities/Engine.cs" Line="53" Column="60" />
+      <File FileName="PeaceServer/Ship/ComponentAbilities/Bridge.cs" Line="1" Column="1" />
+      <File FileName="PeaceServer/Ship/ComponentAbilities/Armour.cs" Line="1" Column="1" />
+      <File FileName="PeaceServer/Ship/ComponentAbilities/Heal.cs" Line="46" Column="60" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

@@ -102,15 +102,8 @@ public class RandomizedProjectile : ComponentAbility{
 
 			currentSlice += currentDelayBetweenShots; 
 
-			//float damageMultiplier = component.MaxValueOfStatus("enhance");
-
-			//damage = damage * ((100.0f + damageMultiplier) / 100.0f);
-
-			//Console.WriteLine("damage multiplier: " + damageMultiplier + " new dmg: " + damage);
-
 			FireEvent newFireEvent = new FireEvent(currentSlice, component.Room.OwnerID, 
 				component.Room.ID, target.OwnerID, currentProjectileSpeed, target.ID, damage);
-
 
 			System.Console.WriteLine("added fire event with owner: " + component.Room.OwnerID + " and damage: " + damage);
 		
