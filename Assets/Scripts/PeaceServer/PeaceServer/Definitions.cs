@@ -31,7 +31,9 @@ public class Definitions{
 #if !PEACE_SERVER
 	string path = "Assets/Scripts/PeaceServer/PeaceServer/Data/";
 #else
-	string path = "../../Data/";
+	//string path = "../../Data/";
+
+	string path = "../../Assets/Scripts/PeaceServer/PeaceServer/Data/";
 #endif
 
 	public List<ShipRoomData> Rooms{
