@@ -1,3 +1,5 @@
+// Upgrade NOTE: replaced '_World2Object' with 'unity_WorldToObject'
+
 Shader "CPX_Custom/Mobile/Reflection/Reflection (Cubemap) Alpha CG" {
    Properties {
    	  _MainTex ("Base (RGB)", 2D) = "white" {}
@@ -35,7 +37,7 @@ Shader "CPX_Custom/Mobile/Reflection/Reflection (Cubemap) Alpha CG" {
             output.normalDirection = input.normal.xyz;
             output.pos = mul(UNITY_MATRIX_MVP,input.vertex);
             //output.viewDirection = ObjSpaceViewDir(input.vertex).xyz;
-            output.viewDirection = (input.vertex - (mul(_World2Object,float4(_WorldSpaceCameraPos,1.0)))).xyz;
+            output.viewDirection = (input.vertex - (mul(unity_WorldToObject,float4(_WorldSpaceCameraPos,1.0)))).xyz;
             return output;
          }
          pixelOutput pixelPass(vertexOutput input){

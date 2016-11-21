@@ -1,3 +1,5 @@
+// Upgrade NOTE: replaced '_World2Object' with 'unity_WorldToObject'
+
 Shader "CPX_Custom/Mobile/Gradient/Gradient Map + Rim CG" {
    Properties {
       _MainTex ("Base (RGB)", 2D) = "white" {}
@@ -44,7 +46,7 @@ Shader "CPX_Custom/Mobile/Gradient/Gradient Map + Rim CG" {
             output.UV = input.texcoord;
             output.normalDirection = input.normal;
             output.pos = mul(UNITY_MATRIX_MVP,input.vertex);
-            output.lightDistance = mul(_World2Object,_LightPosition).xyz - input.vertex.xyz;
+            output.lightDistance = mul(unity_WorldToObject,_LightPosition).xyz - input.vertex.xyz;
 			float lightFalloff = length(output.lightDistance)/_LightIntensity;
 			float normalLength = length(input.normal);
             output.attenuation = clampLight(pow(normalLength/lightFalloff,2.0) * 0.5 + 0.5);

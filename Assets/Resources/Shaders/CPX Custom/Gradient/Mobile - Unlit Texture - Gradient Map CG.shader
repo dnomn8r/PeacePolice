@@ -1,3 +1,5 @@
+// Upgrade NOTE: replaced '_World2Object' with 'unity_WorldToObject'
+
 Shader "CPX_Custom/Mobile/Gradient/Gradient Map CG" {
    Properties {
       _MainTex ("Base (RGB)", 2D) = "white" {}
@@ -31,7 +33,7 @@ Shader "CPX_Custom/Mobile/Gradient/Gradient Map CG" {
          	vertexOutput output;
             output.UV = input.texcoord;
             output.normalDirection = input.normal;
-            output.lightDirection = mul(_World2Object,_WorldSpaceLightPos0).xyz;
+            output.lightDirection = mul(unity_WorldToObject,_WorldSpaceLightPos0).xyz;
             output.pos = mul(UNITY_MATRIX_MVP,input.vertex);
             return output;
          }

@@ -1,3 +1,5 @@
+// Upgrade NOTE: replaced '_Object2World' with 'unity_ObjectToWorld'
+
 Shader "CPX_Custom/Mobile/Diffuse/Diffuse (Lightprobe Support) CG" {
    Properties {
       _MainTex ("Base (RGB)", 2D) = "white" {}
@@ -27,7 +29,7 @@ Shader "CPX_Custom/Mobile/Diffuse/Diffuse (Lightprobe Support) CG" {
          vertexOutput vertexPass(vertexInput input){
          	vertexOutput output;
             output.UV = input.texcoord;
-            output.worldNormal = mul((float3x3)_Object2World,input.normal.xyz);
+            output.worldNormal = mul((float3x3)unity_ObjectToWorld,input.normal.xyz);
             output.pos = mul(UNITY_MATRIX_MVP,input.vertex);
             return output;
          }
