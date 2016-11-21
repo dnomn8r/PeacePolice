@@ -273,8 +273,4 @@ public class TextProcessor : FontChooser{
 		strBuilder = new StringBuilder(100);
 	}
 	
-	void OnLevelWasLoaded()
-	{
-		InitStringBuilder();
-	}
 }

@@ -1,6 +1,7 @@
 using UnityEngine;
 using System.Collections;
 using System.Collections.Generic;
+using UnityEngine.SceneManagement;
 
 public class PopupManager : MonoBehaviour {
 
@@ -42,7 +43,18 @@ public class PopupManager : MonoBehaviour {
 			StartCoroutine(CheckForBackButton ());
 		//}
 	}
-	
+
+
+	private void OnEnable() {
+
+		SceneManager.sceneLoaded += LevelWasLoaded;
+	}
+
+	private void OnDisable() {
+
+		SceneManager.sceneLoaded -= LevelWasLoaded;
+	}
+
 	public bool HasPopups(){
 	
 		return currentPopups.Count > 0;
@@ -50,7 +62,7 @@ public class PopupManager : MonoBehaviour {
 	}
 	
 	// get rid of all existing popups when switching levels
-	void OnLevelWasLoaded(){
+	void LevelWasLoaded(Scene scene, LoadSceneMode mode){
 
 		for(int i = currentPopups.Count - 1;i >= 0;i--){
 
