@@ -4,6 +4,7 @@
 [Tt]emp/
 [Oo]bj/
 [Bb]uilds/
+*[Bb]uild*
 /[Ll]ibrary/
 sysinfo.txt
 *.stackdump
