@@ -262,6 +262,7 @@
     <Compile Include="PeaceGame.cs" />
     <Compile Include="Ship\ComponentAbilities\RandomizedProjectile.cs" />
     <Compile Include="Ship\ShipComponentStatus.cs" />
+    <Compile Include="Ship\ComponentAbilities\Missile.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <ItemGroup>

@@ -1,11 +1,14 @@
 ﻿<Properties StartupConfiguration="{EEADD4DC-7BB9-4A1A-BFBA-2F79C71D2542}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Definitions.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Ship/ComponentAbilities/Missile.cs">
     <Files>
       <File FileName="PeaceMultiplayerGame.cs" Line="1" Column="1" />
       <File FileName="PeaceServer.cs" Line="1" Column="1" />
       <File FileName="PeaceServerClientCommon.cs" Line="1" Column="1" />
       <File FileName="RemotePeacePlayer.cs" Line="1" Column="1" />
-      <File FileName="Definitions.cs" Line="65" Column="3" />
+      <File FileName="Definitions.cs" Line="68" Column="2" />
+      <File FileName="Ship/ComponentAbilities/Laser.cs" Line="102" Column="40" />
+      <File FileName="Combat/CombatScheduler.cs" Line="278" Column="10" />
+      <File FileName="Ship/ComponentAbilities/Missile.cs" Line="1" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|x86" />

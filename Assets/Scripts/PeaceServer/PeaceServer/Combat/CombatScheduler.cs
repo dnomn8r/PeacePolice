@@ -288,8 +288,83 @@ public class FireEvent : ComponentActionResult{
 
 		}
 	}
-
 }
+
+public class AOEFireEvent : FireEvent{
+
+	public int aoe;
+
+	public AOEFireEvent(int slice, string sourcePlayerID, int sourceRoomID, string targetPlayerID,
+		int currentProjectileSpeed, int targetRoom, int damage, int aoe)
+		: base(slice, sourcePlayerID, sourceRoomID, targetPlayerID, currentProjectileSpeed, targetRoom, damage){
+	
+		this.aoe = aoe;
+
+	}
+
+	public override string ToString(){
+
+		string resultString = base.ToString();
+
+		resultString += "\n\aoe: " + aoe;
+
+		return resultString;
+	}
+
+	public override void ProcessResult(CombatScheduler scheduler){
+
+		Player sourcePlayer = scheduler.GetPlayer(sourcePlayerID);
+
+		ShipRoom sourceRoom = sourcePlayer.CurrentShip.GetRoom(sourceRoomID);
+
+		// if we are still alive when this event fires, then schedule our damage event
+		if(!sourceRoom.CurrentComponent.IsDestroyed()){
+
+			Player targetPlayer = scheduler.GetPlayer(targetPlayerID);
+
+			ShipRoom targetRoom = targetPlayer.CurrentShip.GetRoom(this.targetRoomID);
+
+			sourceRoom.CurrentComponent.OnFire(targetRoom, currentProjectileSpeed, true);
+
+			int targetSlice = slice;
+
+			// if it's not an instant attack
+			if(currentProjectileSpeed != -1){
+
+				float distance = (float)((targetRoom.position - sourceRoom.position) +
+					new Vector3(PeaceConstants.DISTANCE_BETWEEN_SHIPS, 0, 0)).Length();
+
+
+				float speedPerSlice = currentProjectileSpeed * CombatScheduler.TIME_SLICE_LENGTH;
+
+				if(speedPerSlice == 0){
+
+					System.Console.WriteLine("projectile speed is 0!");
+				}
+
+				int slicesNeededToReachTarget = (int)(distance / speedPerSlice) + 1;
+
+				targetSlice += slicesNeededToReachTarget;
+			}
+
+		
+			foreach(ShipRoom room in targetPlayer.CurrentShip.GetRoomsWithinRange(targetRoom, aoe)){
+
+				int adjustedDamage = sourceRoom.CurrentComponent.GetAdjustedDamage(damage);
+
+				MissileDamageEvent newDamageEvent = new MissileDamageEvent(targetSlice, room.OwnerID, room.ID, adjustedDamage);
+
+				System.Console.WriteLine("added missile damage event with owner: " + sourceRoom.OwnerID + 
+				                         " and damage: " + damage + " to room: " + room.ID);
+
+				scheduler.AddActionResult(newDamageEvent);
+			}
+
+		}
+	}
+}
+
+
 
 public class DamageEvent : ComponentActionResult{
 
@@ -339,6 +414,15 @@ public class DamageEvent : ComponentActionResult{
 		}else{
 			room.OnTakeDamage(damage);
 		}
+	}
+}
+
+// missiles can be stopped by "flak" which checks for upcoming damage events and may remove them from the list
+public class MissileDamageEvent : DamageEvent{
+
+	public MissileDamageEvent(int slice, string targetPlayerID, int targetRoom, int damage) : 
+		base(slice, targetPlayerID, targetRoom, damage){
+
 	}
 }
 

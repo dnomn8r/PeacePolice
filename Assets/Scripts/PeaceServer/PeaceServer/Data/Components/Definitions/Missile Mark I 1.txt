@@ -1,0 +1,17 @@
+{
+  "identifier": "Missiley",
+  "prefab": "missile1",
+  "size":"1x1",
+  "title": "Missile Mark I",
+  "desc": "Missiley",
+  "system": 100,
+  "armour": 250,
+  "energy":250,
+  
+  "abilities":
+  [
+    {"type": "Missile",
+    "details":
+    "{\"minDamage\":20,\"maxDamage\":50,\"targets\":1,\"aoe\":150,\"projectileSpeed\":100}"}  
+  ]
+}

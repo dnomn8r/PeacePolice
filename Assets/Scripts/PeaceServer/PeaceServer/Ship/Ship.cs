@@ -262,6 +262,23 @@ public class Ship{
 
 	}
 
+	public List<ShipRoom> GetRoomsWithinRange(ShipRoom targetRoom, float range){
+
+		List<ShipRoom> roomsInRange = new List<ShipRoom>();
+
+		foreach(ShipRoom room in Rooms){
+
+			float distance = (float)Vector3.Distance(room.position, targetRoom.position);
+
+			if(distance <= range){
+
+				roomsInRange.Add(room);
+			}
+		}
+
+		return roomsInRange;
+	}
+
 	public List<Shield> GetShieldsProtectingRoom(ShipRoom targetedRoom){
 
 		List<Shield> shields = new List<Shield>();
